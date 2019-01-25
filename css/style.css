@@ -1,0 +1,123 @@
+/*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
+.dropcap {
+  float: left;
+  font-family: Droid serif;
+  font-size: 84px;
+  line-height: 62px;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-left: 4px;
+}
+
+body {
+  color: #2B1D19;
+  font-size: 16px;
+  font-family: 'Gentium Book Basic', sans-serif;
+}
+p {
+  margin-bottom: .67em;
+}
+nav, footer {
+  background-color: #5A1422;
+}
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  color: #DBCED3;
+}
+/*-- Main Menu Styles--*/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1em;
+}
+nav a:link, nav a:visited {
+  color: #C4AEB6;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #E9E1E4;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #D4C4C9;
+}
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  color: #2B1D19;
+}
+.small {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: .25em;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #d8AEB6;
+}
+/*-- Article Styles--*/
+article {
+  width: 768px;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: auto;
+  color: #2B1D19;
+}
+article figure {
+  float: right;
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+}
+article figcaption {
+  font-weight: 200;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  color: #786F6C;
+}
+.pagination {
+  width: 96%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+a.button {
+  border: 1px solid #786F6C;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color: #786F6C;
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 1px solid #2B1D19;
+  text-decoration: none;
+  color: #2B1D19;
+  background: #F8EEF0;
+}
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
